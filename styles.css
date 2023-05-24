@@ -8,11 +8,10 @@
 
 input[type=text],
 input[type=text]:focus{
-    color: #fff;
-    border: none;
+    border: 1px solid #fff;
+    color: #ffffff;
     background: #171b3c40;
     max-width: 400px;
-    box-shadow: #ffffff;
     border-radius: .3125rem;
 }
 
@@ -37,23 +36,34 @@ input[type=text]:focus{
     --size: 250px;
     --speed: 50s;
     --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-  
     width: var(--size);
     height: var(--size);
     filter: blur(calc(var(--size) / 5));
-    background-image: linear-gradient(hsla(184, 100%, 50%, 0.567), hsla(264, 82%, 57%, 0.845));
+    background-image: linear-gradient(hsla(184, 100%, 50%, 0.41), hsla(264, 82%, 57%, 0.635));
     animation: rotate var(--speed) var(--easing) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    z-index: 0;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
+
+img{
+    float: left;
+    width: 6rem;
+    margin-right: 10px;
+}
   
 @media (min-width: 720px) {
     .gradient {
-      --size: 500px;
+        --size: 480px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .container{
+        position: relative;
     }
 }
   
