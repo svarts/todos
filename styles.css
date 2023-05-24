@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+.container{
+    max-width: 400px;
+    z-index: 2;  
+    position: relative;
+}
+
+input[type=text],
+input[type=text]:focus{
+    color: #fff;
+    border: none;
+    background: #171b3c40;
+    max-width: 400px;
+    box-shadow: #ffffff;
+    border-radius: .3125rem;
+}
+
+.todos li{
+    background: #1f184b;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+.gradient {
+    --size: 250px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(hsla(184, 100%, 50%, 0.567), hsla(264, 82%, 57%, 0.845));
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+  
+@media (min-width: 720px) {
+    .gradient {
+      --size: 500px;
+    }
+}
+  
+body {
+    background-color: #121325;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Poppins';
+}
+  
+* {
+    transition: all 0.2s ease-out;
+}
+  
