@@ -81,4 +81,7 @@ body {
 * {
     transition: all 0.2s ease-out;
 }
-  
+
+.filtered{
+    display: none !important;
+}
