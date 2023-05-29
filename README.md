@@ -1,3 +1,5 @@
-**a simple todo list written with vanilla JS**
+# TODOS
+
+A simple todo list written with vanilla JS
 
 https://todos-tt.netlify.app/
