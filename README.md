@@ -1,1 +1,1 @@
-a simple todo list written with vanilla JS
+**a simple todo list written with vanilla JS**
