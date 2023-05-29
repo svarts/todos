@@ -1,1 +1,1 @@
-# todo_app
+a simple todo list written with vanilla JS
