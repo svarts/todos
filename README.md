@@ -16,7 +16,10 @@ Install dependencies:
 ```sh
 npm install
 ```
-Run
+Run:
+```sh
+node server.js
+```
 
 Start the server with node server.js and visit http://localhost:3000
 
